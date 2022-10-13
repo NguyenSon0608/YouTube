@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+    <link rel="icon" href="./images/youtube-logo-icon-2431-thumb.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <i onclick="Mysidebar()" class="fa-solid fa-bars icon_menu"></i>
+            <img src="images/logoyoutube.png" alt="">
+            <span>VN</span>
+        </div>
+        <div class="search">
+            <form action="">
+                <input type="text" id="search-text" placeholder="Tìm Kiếm">
+            </form>
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass icon_search"></i></button>
+            <div class="box">
+                <button class="microphone"><i class="fa-solid fa-microphone mic"></i></button>
+            </div>
+        </div>
+        <div class="icon_right">
+            <i class="fa-solid fa-video icon_menu"></i>
+            <i class="fa-regular fa-bell icon_menu"></i>
+            <button class="btn-user">
+                <p style="font-size: 20px;">S</p>
+            </button>
+        </div>
+    </div>
+    <div>
+        <div class="side-bar open">
+            <div class="nav">
+                <ul>
+                    <li><a class="nav-link active"><i class="fa-solid fa-house"></i><span>Trang Chủ</span></a></li>
+                    <li><a class="nav-link"><i class="fa-regular fa-compass"></i><span>Khám Phá</span></a></li>
+                    <li><a class="nav-link"><i class="fa-regular fa-square-minus"></i><span>Short</span></a></li>
+                    <li><a class="nav-link"><i class="fa-regular fa-square-minus"></i><span>Đăng Kí Kênh</span></a></li>
+                </ul>
+                <ul class="nav-link-chill">
+                    <li>
+                        <a class="nav-link">
+                            <i class="fa-solid fa-circle-play"></i>
+                            <span>Thư Viện</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Video đã xem</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Xem sau</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <span>Video đã thích</span>
+                        </a>
+                </li>
+                </ul>
+            </div>
+            <div class="nav">
+                <ul>
+                    <h3>Kênh đăng kí</h3>
+                    <li>
+                        <a class="nav-link">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Âm nhạc</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link">
+                            <i class="fa-solid fa-trophy"></i>
+                            <span>Thể thao</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Trò chơi</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <span>Tin tức</span>
+                        </a>
+                    </li>
+                </ul>
+            <ul class="nav-link-chill">
+                <h3>Khám Phá</h3>
+                <li>
+                    <a class="nav-link">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>Trò chơi</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>Thể thao</span>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            <div class="nav">
+            <ul>
+                <h3>DỊCH VỤ KHÁC CỦA YOUTUBE</h3>
+                <li>
+                    <a class="nav-link">
+                        <i style="color: red;" class="fa-solid fa-gamepad"></i>
+                        <span>creator studio</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link">
+                        <i style="color: red;" class="fa-regular fa-circle-play"></i>
+                        <span>Youtube Music</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link">
+                        <i style="color: red;" class="fa-brands fa-youtube"></i>
+                        <span>Youtube kid</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link">
+                        <i style="color: red;" class="fa-solid fa-tv"></i>
+                        <span>Youtube TV</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-link-chill">
+                <li>
+                    <a class="nav-link">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Cài đặt</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Nhật kí báo cáo</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <span>Trợ Giúp</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link">
+                        <i class="fa-solid fa-message"></i>
+                        <span>Gửi phản hồi</span>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            <div class="footer">
+            <div class="style-scope">
+                <a href="">Giới thiệu</a>
+                <a href="">Báo chí</a>
+                <a href="">Bản quyền</a>
+                <a href="">Liên hệ với chúng tôi</a>
+                <a href="">Người sáng tạo</a>
+                <a href="">Quảng cáo</a>
+                <a href="">Nhà phát triển</a>
+            </div>
+            <div class="style-scope">
+                <a href="">Điều khoản</a>
+                <a href="">Quyền riêng tư</a>
+                <a href="">Chính sách và an toàn</a>
+                <a href="">Cách Youtube hoạt động</a>
+                <a href="">Thử các tính năng mới</a>
+            </div>
+            <div class="style-scope">
+                <a href="">© 2022 Google LLC</a>
+            </div>
+            </div>
+        </div>
+        <div class="side-bar-chill">
+            <ul>
+                <li><a><i class="fa-solid fa-house"></i><span>Trang Chủ</span></a></li>
+                <li><a><i class="fa-regular fa-compass"></i><span>Khám Phá</span></a></li>
+                <li><a><i class="fa-regular fa-square-minus"></i><span>Short</span></a></li>
+                <li><a><i class="fa-regular fa-square-minus"></i><span>Đăng Kí Kênh</span></a></li>
+                <li><a><i class="fa-solid fa-circle-play"></i><span>Thư Viện</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        
+        <div class="content">
+            <div class="option">
+                <button class="btn_option all">Tất cả</button>
+                <button class="btn_option">Âm nhạc</button>
+                <button class="btn_option">Trực tiếp</button>
+                <button class="btn_option">Trò chơi</button>
+                <button class="btn_option">Hoạt họa</button>
+                <button class="btn_option">Bóng đá</button>
+                <button class="btn_option">Thiên nhiên</button>
+                <button class="btn_option">Nấu ăn</button>
+                <button class="btn_option">Trò chơi hành động phiêu lưu</button>
+                <button class="btn_option">Thủ công</button>
+                <button class="btn_option">Mới tải lên gần đây</button>
+                <button class="btn_option">Đề xuất mới</button>
+            </div>
+            <div class="video">
+                <div class="videos">
+                    <div class="thumbnail">
+                        <img src="images/anhdienthoai.png" alt="">
+                    </div>
+                    <div class="wrap">
+                        <div class="details">
+                            <img src="images/anhdienthoai.png" alt="" id="avartar">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Nguyễn hồng sơn đi thực tập đẹp trai nhất công ty :))
+                            </h3>
+                            <a href="">
+                                Nguyễn Sơn
+                            </a>
+                            <span> 100M view • 1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="videos">
+                        <div class="thumbnail">
+                            <img src="images/anhdienthoai.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="details">
+                                <img src="images/anhdienthoai.png" alt="" id="avartar">
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    Nguyễn hồng sơn đi thực tập đẹp trai nhất công ty :))
+                                </h3>
+                                <a href="">
+                                    Nguyễn Sơn
+                                </a>
+                                <span> 100M view • 1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="videos">
+                        <div class="thumbnail">
+                            <img src="images/anhdienthoai.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="details">
+                                <img src="images/anhdienthoai.png" alt="" id="avartar">
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    Nguyễn hồng sơn đi thực tập đẹp trai nhất công ty :))
+                                </h3>
+                                <a href="">
+                                    Nguyễn Sơn
+                                </a>
+                                <span> 100M view • 1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="videos">
+                        <div class="thumbnail">
+                            <img src="images/anhdienthoai.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="details">
+                                <img src="images/anhdienthoai.png" alt="" id="avartar">
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    Nguyễn hồng sơn đi thực tập đẹp trai nhất công ty :))
+                                </h3>
+                                <a href="">
+                                    Nguyễn Sơn
+                                </a>
+                                <span> 100M view • 1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="videos">
+                        <div class="thumbnail">
+                            <img src="images/anhdienthoai.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="details">
+                                <img src="images/anhdienthoai.png" alt="" id="avartar">
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    Nguyễn hồng sơn đi thực tập đẹp trai nhất công ty :))
+                                </h3>
+                                <a href="">
+                                    Nguyễn Sơn
+                                </a>
+                                <span> 100M view • 1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="videos">
+                        <div class="thumbnail">
+                            <img src="images/anhdienthoai.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="details">
+                                <img src="images/anhdienthoai.png" alt="" id="avartar">
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    Nguyễn hồng sơn đi thực tập đẹp trai nhất công ty :))
+                                </h3>
+                                <a href="">
+                                    Nguyễn Sơn
+                                </a>
+                                <span> 100M view • 1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="videos">
+                        <div class="thumbnail">
+                            <img src="images/anhdienthoai.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="details">
+                                <img src="images/anhdienthoai.png" alt="" id="avartar">
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    Nguyễn hồng sơn đi thực tập đẹp trai nhất công ty :))
+                                </h3>
+                                <a href="">
+                                    Nguyễn Sơn
+                                </a>
+                                <span> 100M view • 1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="videos">
+                        <div class="thumbnail">
+                            <img src="images/anhdienthoai.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="details">
+                                <img src="images/anhdienthoai.png" alt="" id="avartar">
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    Nguyễn hồng sơn đi thực tập đẹp trai nhất công ty :))
+                                </h3>
+                                <a href="">
+                                    Nguyễn Sơn
+                                </a>
+                                <span> 100M view • 1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="videos">
+                        <div class="thumbnail">
+                            <img src="images/anhdienthoai.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="details">
+                                <img src="images/anhdienthoai.png" alt="" id="avartar">
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    Nguyễn hồng sơn đi thực tập đẹp trai nhất công ty :))
+                                </h3>
+                                <a href="">
+                                    Nguyễn Sơn
+                                </a>
+                                <span> 100M view • 1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="videos">
+                        <div class="thumbnail">
+                            <img src="images/anhdienthoai.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="details">
+                                <img src="images/anhdienthoai.png" alt="" id="avartar">
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    Nguyễn hồng sơn đi thực tập đẹp trai nhất công ty :))
+                                </h3>
+                                <a href="">
+                                    Nguyễn Sơn
+                                </a>
+                                <span> 100M view • 1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="videos">
+                        <div class="thumbnail">
+                            <img src="images/anhdienthoai.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="details">
+                                <img src="images/anhdienthoai.png" alt="" id="avartar">
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    Nguyễn hồng sơn đi thực tập đẹp trai nhất công ty :))
+                                </h3>
+                                <a href="">
+                                    Nguyễn Sơn
+                                </a>
+                                <span> 100M view • 1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script>
+            function Mysidebar() {
+                var x = document.body;
+                x.classList.toggle("convert")
+            }
+        </script>
+</body>
+
+</html>
