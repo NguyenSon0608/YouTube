@@ -29,6 +29,7 @@ body{
     /* height: calc(100vh - 75px); */
     display: flex;
     background-color: #f9f9f9;
+    overflow-x: hidden;
 }
 .header .logo img
 {
@@ -237,6 +238,8 @@ h3{
     width: calc(100vw - 244px);
     z-index: 1;
     overflow-y: scroll;
+
+
 }
 
 .videos{
@@ -247,7 +250,7 @@ h3{
 
 .videos .thumbnail img{
     width: 100%;
-    height: 100%;
+    height: 170px;
 }
 
 #avartar{
@@ -301,6 +304,7 @@ span {
     padding-top: 80px;
     right: 0;
     justify-content: space-around;
+    white-space: nowrap;
     z-index: 2;
 }
 
@@ -384,7 +388,7 @@ span {
         display: grid;
         grid-template-columns: repeat(3 , 1fr);
     }
-}
+} 
 
 @media (max-width: 600px) {
     .box {
@@ -407,6 +411,10 @@ span {
         display: grid;
         grid-template-columns: repeat(4 , 1fr);
     }
+    .option {
+        left: 74px;
+    }
+
 }
 @media (max-width: 1180px) {
     .video {
@@ -414,6 +422,9 @@ span {
         grid-template-columns: repeat(3 , 1fr);
         align-items: center;
         padding-left: 60px;
+    }
+    .option {
+        left: 74px;
     }
 }
 @media (max-width: 980px) {
@@ -426,6 +437,9 @@ span {
         width: 100vw;
         margin-left: -30px;
     }
+    .option {
+        left: 0px;
+    }
 }
 @media (max-width: 845px) {
     .video {
@@ -435,6 +449,9 @@ span {
         margin-left: 20px;
 
     }
+    .option {
+        left: 0px;
+    }
 }
 @media (max-width: 555px) {
     .video {
@@ -442,5 +459,17 @@ span {
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
         padding-left: 30px;
+    }
+    .option {
+        left: 0px;
+    }
+    .icon_menu {
+        margin-left: 10px;
+    }
+    .btn-user {
+        margin-left: 10px;
+    }
+    #search-btn {
+        width: 5px;
     }
 }
